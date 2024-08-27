@@ -7,10 +7,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Евклид</title>
   <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+
+    <!--fonts-->
+    <link rel="preload" htef="fonts/montserrat-bold-webfont.woff2" as="font">
+    <link rel="preload" href="fonts/montserrat-extrabold-webfont.woff2" as="font">
+    <link rel="preload" href="fonts/montserrat-regular-webfont.woff2" as="font">
+    <link rel="preload" href="fonts/montserrat-semibold-webfont.woff2" as="font">
+    <link rel="prefetch" href="fonts/montserrat-bold-webfont.woff" as="font">
+    <link rel="prefetch" href="fonts/montserrat-black-webfont.woff" as="font">
+    <link rel="prefetch" href="fonts/montserrat-black-webfont.woff2" as="font">
+    <link rel="prefetch" href="fonts/montserrat-blackitalic-webfont.woff" as="font">
+    <link rel="prefetch" href="fonts/montserrat-blackitalic-webfont.woff2" as="font">
+    <link rel="prefetch" href="fonts/montserrat-bolditalic-webfont.woff" as="font">
+    <link rel="prefetch" href="fonts/montserrat-bolditalic-webfont.woff2" as="font">
+    <link rel="prefetch" href="fonts/montserrat-extrabold-webfont.woff" as="font">
+    <link rel="prefetch" href="fonts/montserrat-extrabold-webfont.woff2" as="font">
+    <link rel="prefetch" href="fonts/montserrat-extrabolditalic-webfont.woff" as="font">
+    <link rel="prefetch" href="fonts/montserrat-extrabolditalic-webfont.woff2" as="font">
+    <link rel="prefetch" href="fonts/montserrat-extralight-webfont.woff" as="font">
+    <link rel="prefetch" href="fonts/montserrat-extralight-webfont.woff2" as="font">
+    <link rel="prefetch" href="fonts/montserrat-extralightitalic-webfont.woff" as="font">
+    <link rel="prefetch" href="fonts/montserrat-extralightitalic-webfont.woff2" as="font">
+    <link rel="prefetch" href="fonts/montserrat-italic-webfont.woff" as="font">
+    <link rel="prefetch" href="fonts/montserrat-italic-webfont.woff2" as="font">
+    <link rel="prefetch" href="fonts/montserrat-light-webfont.woff" as="font">
+    <link rel="prefetch" href="fonts/montserrat-light-webfont.woff2" as="font">
+    <link rel="prefetch" href="fonts/montserrat-lightitalic-webfont.woff" as="font">
+    <link rel="prefetch" href="fonts/montserrat-lightitalic-webfont.woff2" as="font">
+    <link rel="prefetch" href="fonts/montserrat-medium-webfont.woff" as="font">
+    <link rel="prefetch" href="fonts/montserrat-medium-webfont.woff2" as="font">
+    <link rel="prefetch" href="fonts/montserrat-mediumitalic-webfont.woff" as="font">
+    <link rel="prefetch" href="fonts/montserrat-mediumitalic-webfont.woff2" as="font">
+    <link rel="prefetch" href="fonts/montserrat-semibold-webfont.woff" as="font">
+    <link rel="prefetch" href="fonts/montserrat-semibolditalic-webfont.woff" as="font">
+    <link rel="prefetch" href="fonts/montserrat-semibolditalic-webfont.woff2" as="font">
+    <link rel="prefetch" href="fonts/montserrat-thin-webfont.woff" as="font">
+    <link rel="prefetch" href="fonts/montserrat-thin-webfont.woff2" as="font">
+    <link rel="prefetch" href="fonts/montserrat-thinitalic-webfont.woff" as="font">
+    <link rel="prefetch" href="fonts/montserrat-thinitalic-webfont.woff2" as="font">
+
+    <!--css-->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/accordion.css">
   <link rel="stylesheet" href="css/style.css">
+    <!--js-->
+  <script defer src="/js/accordion.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script defer src="js/main.js"></script>
 </head>
 
 <body>
@@ -38,7 +82,7 @@
             </button>
             <ul class="nav__list list-reset flex">
               <li class="nav__item nav__item_1">
-                <a href="#" class="nav__link">
+                <a href="#about" class="nav__link">
                   О нас
                 </a>
               </li>
@@ -48,7 +92,7 @@
                 </a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link">
+                <a href="#work" class="nav__link">
                   Этапы
                 </a>
               </li>
@@ -133,7 +177,7 @@
       </div><!--/container-->
 
     </section>
-    <section class="evclid-section section-about">
+    <section id="about" class="evclid-section section-about">
       <div class="container">
         <h2 class="section-title section-about__title">О&nbsp;нас</h2>
         <p class="section-about__descr">
@@ -178,7 +222,7 @@
         </div>
       </div><!--Container-->
     </section>
-    <section class="evclid-section section-work" id="work">
+    <section itemid="work" class="evclid-section section-work" id="work">
       <div class="container">
         <h2 class="section-title section-work__title">Как мы работаем</h2>
         <nav class="section-work__nav">
@@ -554,10 +598,6 @@
       </div>
     </div>
   </footer>
-  <script src="/js/accordion.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="js/main.js"></script>
-
 </body>
 
 </html>
